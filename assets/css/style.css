@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300;400&family=Rubik+Glitch&display=swap');
-
 body {
     background-color: #090909; 
 }
@@ -17,17 +16,13 @@ body {
 }
 
 /*-----------------------------------------
-              Header
+              NAV,HEADER
 -----------------------------------------*/
-#header {
-    z-index: 997;
+.header {
     transition: all 0.5s;
-    height: 5px;
+    padding: 20px;
 }
 
-.navbar {
-  padding: 0;
-}
 
 .navbar ul {
   margin: 0;
@@ -74,6 +69,21 @@ li {
   text-align: -webkit-match-parent;
 }
 
+.navbar-toggler{
+  padding: var(--#{$prefix}navbar-toggler-padding-y) var(--#{$prefix}navbar-toggler-padding-x)
+}
+
+.navbar-toggler-icon {
+  color: rgba(255, 255, 255, .4);
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
 
 /*--------------------------------------------------------------
                           Hero
@@ -142,35 +152,13 @@ i {
   color: black;
   }
 
+.icons-hero {
+  color: #ffb800
+}
+
+.social-links {
+  padding-top: 20px;
+}
 /*-------------------------------------------------------
                     Navigation Menu
 --------------------------------------------------------------*/
-@media (max-width: 1200px){
-  .mobile-nav-toggle {
-    display: none;
-  }
-
-  .navbar ul {
-    display: flex;
-  }
-}
-@media (max-width: 992px) {
-  
-  .navbar ul {
-    display: none;
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .mobile-nav-toggle {
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    line-height: 0;
-    transition: 0.5s;
-    position: fixed;
-    right: 15px;
-    top: 5px;
-}
