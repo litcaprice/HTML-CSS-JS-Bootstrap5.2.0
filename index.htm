@@ -4,56 +4,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Document</title>
+  <title>Портфолио</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="assets/css/mdb.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   
 </head>
 <body> 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-              <li class="nav-item"><a class="nav-link " href="#">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link " href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+  <header id="header">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <div class="hero d-flex justify-content-center align-items-center text-center">
+  <section class="d-flex flex-column justify-content-center">
     <div class="container">
-      <div class="row">
-        <span class="icons-hero">
-          <i class="fa-solid fa-code fa-xl"></i>
-          <i class="fa-solid fa-palette fa-xl"></i>
-        </span>
-        <h1 class="">In Search Of Myself <br>or<br>"I'd Rather Die"</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead my">This is not a guide. This is my story.</p>
-          <div class="" id="btn-floating-botton">
-            <a href="" class="floating-button">More details</a>
-            <a href="" class="floating-button">Contact</a>
+      <h1>Alina Afanaseva</h1>
+      <p>Started<span>Developer</span></p>
+    </div>
+    <div class="social-link">
+      <i class="fa-brands fa-telegram"><a href="#"></a></i>
+      <i class="fa-brands fa-vk"><a href="#"></a></i>
+      <i class="fa-brands fa-github"><a href="#"></a></i>
+      <i class="fa-brands fa-discord"><a href="#"></a></i>
+      <i class="fa-brands fa-pinterest"><a href="#"></a></i>
+    </div>
+  </section>
+  <div class="main" id="main">
+    <section class="about ">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+        </div>
+        <div class="row about-content">
+          <div class="col-lg-4">
+            <img src="">
+          </div>
+          <div class="col-lg-8 content">
+            <h3> Started UI/UX Designer & Web Developer</h3>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="fa-duotone fa-chevrons-right"></i><strong>Bithday:</strong><span> 1 January 2000</span></li>
+                    <li><i class="fa-duotone fa-chevrons-right"></i><strong>City:</strong><span> Moskow, Russia</span></li>
+                    <li><i class="fa-duotone fa-chevrons-right"></i><strong>Age:</strong><span> 22 </span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="fa-duotone fa-chevrons-right"></i><strong>Website:</strong><span> www.example.com</span></li>
+                    <li><i class="fa-duotone fa-chevrons-right"></i><strong>Email:</strong><span> email@example.com</span></li>
+                    <li><i class="fa-duotone fa-chevrons-right"></i><strong>Phone:</strong><span> +8 800 555 35 35</span></li>
+                  </ul>
+                </div>
+              </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row skills-content">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skills">HTML</span>
+              <span class="percent">60%</span>
+            </div>
+            <div class="progress">
+              <span class="skills">CSS</span>
+              <span class="percent">70%</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skills">JAVASCRIPT</span>
+              <span class="percent">15%</span>
+            </div>
+            <div class="progress">
+              <span class="skills">ILLUSTRATOR</span>
+              <span class="percent">60%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li class="filter-active">All</li>
+              <li class="">App</li>
+              <li class="">Web</li>
+              <li class="">Draw</li>
+            </ul>
+          </div>
+          <div class="row portfolio-container">
+            <div class="col-lg-4">
+              <div class="portfolio-wrap">
+                <img src="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-wrap">
+                <img src="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-wrap">
+                <img src="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-wrap">
+                <img src="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+  <footer>
+    
+  </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/f9eed1e40b.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="assets/js/fullpage.min.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="/assets/js/mdb.min.js"></script>
+
+
 </body>
 </html>
 
