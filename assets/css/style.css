@@ -1,3 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat:wght@300;400;500;700&display=swap');
+
 body {
-  background-color: #1E6EEE5;
+  background-color: #E6EEE5;
+}
+
+ul {
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+/*-------------
+Navigation menu
+-------------*/
+.nav-link {
+  padding: 0;
+}
+
+.nav-link i {
+  position: fixed;
+  bottom: 60px;
+  right: 60px; 
+  color: #fff;
+  padding: 15px;
+  border-radius: 36px;
+  transition: 1s;
+  background-color: #AA1EDE;
+}
+
+.nav-link i:hover {
+  color: #fff; /*должна раскрываться в длину и показывать span */
+}
+
+
+/*--------------
+Section general
+--------------*/
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 70px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #AA1EDE;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/*--------------
+Section hero
+--------------*/
+
+#hero {
+  height: 100vh;
+  background-image: url("/assets/images/bg-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero h1 {
+  font-size: 64px;
+  color: #fff;
+}
+
+#hero p {
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#hero span {
+  color: #AA1EDE;
+}
+
+#hero i {
+  margin-right: 25px;
+}
+
+#hero a {
+  color: #fff;
+}
+
+@media(max-width: 771px) {
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 60px;
+  }
+
+  #hero p {
+    font-size: 28px;
+  }
+}
+ 
+ #hero .social-link a {
+  cursor: pointer;
+  transition: 0.3s;
+  padding-right: 15px;
+ }
+
+ #hero .social-link a:hover {
+  color: #AA1EDE;
+ }
+
+/*--------------
+Section about
+--------------*/
+
+.about i {
+  padding-right: 5px;
+  color: #AA1EDE;
+}
+
+
+/*--------------
+Section skills
+--------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Monseratt", sans-serif;
+  color: #45505b;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #AA1EDE;
+}
+/*----------------
+Section portfolio
+----------------*/
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #AA1EDE;
 }
